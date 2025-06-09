@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="986.0" style="-fx-background-color: white; -fx-border-color: orange;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dairoutymobiles.Controller.Billing">
+   <children>
+      <TextField fx:id="cusname" layoutX="191.0" layoutY="84.0" prefHeight="40.0" prefWidth="261.0" promptText="Customer Name">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+
+      <Label fx:id="versionLabel" layoutX="1.0" layoutY="1.0" prefHeight="575.0" prefWidth="178.0" style="-fx-background-color: black; -fx-text-fill: white;">
+         <font>
+            <Font name="Chiller" size="29.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="68.0" layoutY="217.0" prefHeight="58.0" prefWidth="115.0" text="Billing" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="AddB" alignment="CENTER" layoutX="506.0" layoutY="189.0" mnemonicParsing="false" onAction="#addItem" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: green; -fx-border-color: white;" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Button>
+
+      <Hyperlink fx:id="editpfp" layoutX="8.0" layoutY="187.0" onAction="#editProfilePicture" text="Edit" textAlignment="RIGHT" textFill="#0dffcf" underline="true" wrapText="true">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="profilepic" fitHeight="163.0" fitWidth="171.0" layoutX="6.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/DefaultPP.png" />
+         </image>
+      </ImageView>
+
+      <Label fx:id="Dairouty" alignment="TOP_LEFT" layoutX="175.0" layoutY="1.0" prefHeight="74.0" prefWidth="811.0" style="-fx-background-color: black; -fx-text-fill: orange;" text="Dairouty Mobiles">
+         <font>
+            <Font name="Jokerman" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="58.0" fitWidth="57.0" layoutX="855.0" layoutY="9.0" onMouseClicked="#openFacebook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/pngegg%20(3).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="919.0" layoutY="14.0" onMouseClicked="#openInstagram" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/pngegg%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="57.0" layoutX="798.0" layoutY="9.0" onMouseClicked="#openLocation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/jk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="68.0" layoutY="527.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/f.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="47.0" layoutX="14.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/pngegg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="291.0" onMouseClicked="#gotoProd" prefHeight="58.0" prefWidth="115.0" style="-fx-text-fill: orange;" text="Products" textFill="#4000ff">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="47.0" layoutX="14.0" layoutY="297.0" onMouseClicked="#gotoProd" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/category-56-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="47.0" layoutX="14.0" layoutY="375.0" onMouseClicked="#gotoCustomers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/kindpng_107037.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="455.0" onMouseClicked="#gotoInvoices" prefHeight="58.0" prefWidth="115.0" style="-fx-text-fill: orange;" text="Invoices" textFill="#4000ff">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="47.0" layoutX="14.0" layoutY="461.0" onMouseClicked="#gotoInvoices" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/pngwing.com%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="375.0" onMouseClicked="#gotoCustomers" prefHeight="58.0" prefWidth="115.0" style="-fx-text-fill: orange;" text="Customers" textFill="#4000ff">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="removepfp" layoutX="104.0" layoutY="187.0" onAction="#removePfp" text="Remove" textAlignment="RIGHT" textFill="#ff0f0f" underline="true" wrapText="true">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Hyperlink>
+      <TextField fx:id="phonenum" layoutX="468.0" layoutY="84.0" prefHeight="40.0" prefWidth="234.0" promptText="Phone Number">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="paymentmethod" layoutX="716.0" layoutY="84.0" prefHeight="40.0" prefWidth="249.0" promptText="Payment Method" style="-fx-font-size: 20; -fx-font-family: Algerian;" />
+      <ComboBox fx:id="productID" layoutX="193.0" layoutY="136.0" prefHeight="40.0" prefWidth="262.0" promptText="Product ID" style="-fx-font-size: 22; -fx-font-family: Algerian;" />
+      <TextField fx:id="unitprice" layoutX="470.0" layoutY="136.0" prefHeight="40.0" prefWidth="234.0" promptText="Unit Price">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="quantity" layoutX="717.0" layoutY="136.0" prefHeight="40.0" prefWidth="250.0" promptText="Quantity" style="-fx-font-size: 22; -fx-font-family: Algerian;" />
+      <TextField fx:id="GrandTotal" layoutX="191.0" layoutY="187.0" prefHeight="40.0" prefWidth="269.0" promptText="Grand Total">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+      <Button fx:id="RemoveB" alignment="CENTER" layoutX="637.0" layoutY="189.0" mnemonicParsing="false" onAction="#removeItem" prefHeight="36.0" prefWidth="115.0" style="-fx-background-color: red; -fx-border-color: white;" text="Remove" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Button>
+      <TableView fx:id="InvLineItemsTable" layoutX="191.0" layoutY="236.0" prefHeight="296.0" prefWidth="775.0" stylesheets="@../Styles/tableview.css">
+        <columns>
+          <TableColumn fx:id="ProductNameCol" prefWidth="443.19993591308594" text="Product" />
+          <TableColumn fx:id="UnitPriceCol" minWidth="0.0" prefWidth="181.59991455078125" text="Unit Price" />
+            <TableColumn fx:id="QuantityCol" minWidth="0.0" prefWidth="149.60009765625" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="ClearB" alignment="CENTER" layoutX="803.0" layoutY="536.0" mnemonicParsing="false" onAction="#clearTable" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: red; -fx-border-color: white;" text="Clear" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="SaveB" alignment="CENTER" layoutX="258.0" layoutY="536.0" mnemonicParsing="false" onAction="#saveInvoice" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: blue; -fx-border-color: white;" text="Save" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="PrintB" alignment="CENTER" layoutX="523.0" layoutY="536.0" mnemonicParsing="false" onAction="#printInvoice" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: fuchsia; -fx-border-color: white;" text="Print" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="branchl" layoutX="580.0" layoutY="22.0" prefHeight="58.0" prefWidth="115.0" text="Branch : " textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+/* Styling table rows */
+.table-row-cell {
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-color: #a1a1a1;
+    -fx-text-fill: Black;
+    -fx-border-color: Black;
+}
+
+/* Styling table rows when selected */
+.table-row-cell:selected {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-border-color: red;
+}
+
+.column-header {
+    -fx-font-family: "Forte";
+    -fx-font-size: 30px;
+    -fx-background-color: orange;
+    -fx-text-fill: Black;
+    -fx-border-color: Black;
+}
+
+

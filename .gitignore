@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+**/Release/
+**/Debug/
+*.exe
+*.dll
+*.pdb
+*.user
+*.suo
+*.class
+*.jar
+.vs/
+.idea/
+*.iml

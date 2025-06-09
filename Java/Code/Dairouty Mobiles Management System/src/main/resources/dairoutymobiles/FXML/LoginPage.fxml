@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="422.0" prefWidth="733.0" style="-fx-background-color: black; -fx-border-color: orange;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dairoutymobiles.Controller.LoginPage">
+   <children>
+      <TextField fx:id="tUser" layoutX="475.0" layoutY="182.0" prefHeight="22.0" prefWidth="219.0" promptText="Enter Username">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+
+      <Label fx:id="Dairouty" alignment="CENTER" layoutX="147.0" layoutY="7.0" prefHeight="74.0" prefWidth="438.0" style="-fx-background-color: black; -fx-text-fill: orange;" text="Dairouty Mobiles">
+         <font>
+            <Font name="Jokerman" size="45.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="versionLabel" layoutX="14.0" layoutY="351.0" prefHeight="74.0" prefWidth="140.0" text="Version 2.0" style="-fx-background-color: black; -fx-text-fill: white;">
+         <font>
+            <Font name="Chiller" size="29.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="256.0" layoutY="99.0" prefHeight="83.0" prefWidth="220.0" style="-fx-text-fill: blue;" text="Select Role :">
+         <font>
+            <Font name="Viner Hand ITC" size="31.0" />
+         </font>
+      </Label>
+
+      <ComboBox fx:id="RoleB" layoutX="475.0" layoutY="117.0" prefHeight="47.0" prefWidth="219.0" promptText="Select Role" style="-fx-background-color: orange; -fx-font-size: 22; -fx-font-family: Algerian;" />
+      <PasswordField fx:id="tPass" layoutX="475.0" layoutY="236.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter Password" style="-fx-text-fill: black;">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </PasswordField>
+
+      <TextField fx:id="tPassText" layoutX="475.0" layoutY="236.0" prefHeight="40.0" prefWidth="220.0" promptText="Enter Password" style="-fx-text-fill: black;" visible="false">
+         <font>
+            <Font name="Cooper Black" size="22.0" />
+         </font>
+      </TextField>
+
+      <Button fx:id="LoginB" alignment="CENTER" layoutX="350.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="57.0" prefWidth="178.0" style="-fx-background-color: green; -fx-border-color: white;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="ExitB" alignment="CENTER" cancelButton="true" layoutX="546.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="57.0" prefWidth="178.0" style="-fx-background-color: RED; -fx-border-color: white;" text="EXIT" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Button>
+
+      <CheckBox fx:id="ShowPass" contentDisplay="CENTER" layoutX="475.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleShowPassword" prefHeight="22.0" prefWidth="212.0" text="Show Password" textAlignment="RIGHT" textFill="#e59e0b" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </CheckBox>
+
+      <Hyperlink layoutX="559.0" layoutY="321.0" onAction="#handleForgetPassword" text="Forget Password ?" textAlignment="RIGHT" textFill="#0dffcf" underline="true" wrapText="true">
+         <font>
+            <Font name="Forte" size="18.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="242.0" fitWidth="237.0" layoutX="14.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photos/Dairouty%20New.jpg" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>
